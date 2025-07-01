@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    //Declaração de variáveis
+    int a=5, b=2;
+    float c=5.0f, d=2.0f;
+    double x=5.0, y=2.0;
+    //Processamento 
+    int intdivisão = a/b;
+    float floatdivisão = c/d;
+    double doubledivisão = x/y;
+    //Saída de dados
+    cout << "int: "<<intdivisão<<endl;
+    cout << "float: "<<floatdivisão<<endl;
+    cout << "double: "<<doubledivisão<<endl;
+
+    return 0;
+}
