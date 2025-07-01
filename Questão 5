@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+  //Declaração de Variáveis
+  string nome;
+  int idade;
+  //Entrada de dados
+  cout <<"Informe seu nome: ";
+  cin >> nome;
+  cout <<"Informe sua idade: ";
+  cin >>idade;
+  //Saída de dados
+  cout <<"Bem vindo(a)!! " <<nome<<", voce tem: " <<idade<< " anos;D";
+      return 0;
+}
