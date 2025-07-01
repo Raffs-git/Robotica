@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Declaração de Tipos primitivos
+    int numero = 10;
+    float decimal = 0.5f;
+    double decimal_maior = 3.14159;
+    char letra = 'a';
+    bool Falso = false;
+
+    // Saída de dados
+    cout << "Valor de int: " << numero << endl;
+    cout << "Valor de float: " << decimal << endl;
+    cout << "Valor de double: " << decimal_maior << endl;
+    cout << "Valor de char: " << letra << endl;
+    cout << "Valor de bool (false): " << Falso << endl;
+    
+    return 0;
+}
