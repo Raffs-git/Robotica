@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+//Declaração de constante
+const float pi = 3.14159;
+//Declaração de Variável
+float raio, area;
+//Entrada de dados
+cout << "Informe o raio: ";
+cin>>raio;
+//Processamento 
+ area = pi * (raio * raio);
+//Saída de dados
+cout <<"A area do círculo é: "<<area<<endl;
+  return 0;
+}
