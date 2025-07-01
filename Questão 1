@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     // Declaração de Tipos primitivos
     int numero = 10;
-    float decimal = 0.5f;
+    float decimal = 0.5;
     double decimal_maior = 3.14159;
     char letra = 'a';
     bool Falso = false;
