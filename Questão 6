@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+// Definição da função soma
+int soma(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    // Declaração de variáveis
+    int numero1, numero2, resultado;
+
+    // Entrada de dados
+    cout << "Informe o primeiro número: ";
+    cin >> numero1;
+
+    cout << "Informe o segundo número: ";
+    cin >> numero2;
+
+    // Chamada da função e saída
+    resultado = soma(numero1, numero2);
+    cout << "A soma é: " << resultado << endl;
+
+    return 0;
+}
