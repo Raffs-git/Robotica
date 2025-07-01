@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  //Declaração de Variáveis
+   int numero1, int numero2;
+  //Entrada de dados
+cout << "Digite um valor para o primeiro número: ";
+cin >> numero1;
+cout << "Digite um valo para o segundo número: ";
+cin >> numero2;
+ //Processamento
+ int soma = numero1 + numero2;
+ int subtração = numero1 - numero2;
+ int multiplicação = numero1 * numero2;
+ int divisão = numero1 / numero2;
+ //Saída de dados
+ cout <<"Resultado soma: "<<soma<< endl;
+ cout <<"Resultado subtração: "<<subtração<< endl;
+ cout <<"Resultado multiplicação: "<<multiplicação<< endl;
+ cout <<"Resultado divisão : " <<divisão<<endl;
+  return 0;
+}
