@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+void mostrarMensagem() {
+    cout << "Oi! Seja bem-vindo(a) :D!" << endl;
+}
+
+int main() {
+    mostrarMensagem();
+    return 0;
+}
