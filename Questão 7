@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+bool ehPar(int numero) {
+    return numero % 2 == 0;
+}
+
+int main() {
+    int valor;
+    cout << "Digite um número: ";
+    cin >> valor;
+
+    if (ehPar(valor)) {
+        cout << "O número é par." << endl;
+    } else {
+        cout << "O número é ímpar." << endl;
+    }
+
+    return 0;
+}
