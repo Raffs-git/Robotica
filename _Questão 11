@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numero = 42;         // Variável inteira
+    int* ponteiro = &numero; // Ponteiro apontando para o endereço de 'numero'
+
+    cout << "Valor da variável: " << *ponteiro << endl;         // Acessa o valor através do ponteiro
+    cout << "Endereço da variável: " << ponteiro << endl;       // Mostra o endereço armazenado no ponteiro
+
+    return 0;
+}
