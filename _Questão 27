@@ -1,0 +1,66 @@
+#include <iostream>
+using namespace std;
+
+const float LIMITE_SAQUE = 1000.0;
+const float LIMITE_DEPOSITO = 5000.0;
+
+float saldo_da_conta = 0;
+
+void consultarSaldo() {
+    cout << "Saldo atual: R$ " << saldo_da_conta << endl;
+}
+
+void depositar(float valor) {
+    if (valor > 0 && valor <= LIMITE_DEPOSITO) {
+        saldo_da_conta += valor;
+        cout << "Deposito realizado com sucesso." << endl;
+    } else {
+        cout << "Valor invalido para deposito." << endl;
+    }
+}
+
+void sacar(float valor) {
+    if (valor > 0 && valor <= saldo_da_conta && valor <= LIMITE_SAQUE) {
+        saldo_da_conta -= valor;
+        cout << "Saque realizado com sucesso." << endl;
+    } else {
+        cout << "Saque nao permitido." << endl;
+    }
+}
+
+int main() {
+    int opcao;
+    float valor;
+
+    do {
+        cout << "\n1 - Consultar saldo\n";
+        cout << "2 - Depositar\n";
+        cout << "3 - Sacar\n";
+        cout << "0 - Sair\n";
+        cout << "Opcao: ";
+        cin >> opcao;
+
+        switch(opcao) {
+            case 1:
+                consultarSaldo();
+                break;
+            case 2:
+                cout << "Valor do deposito: ";
+                cin >> valor;
+                depositar(valor);
+                break;
+            case 3:
+                cout << "Valor do saque: ";
+                cin >> valor;
+                sacar(valor);
+                break;
+            case 0:
+                cout << "Encerrando..." << endl;
+                break;
+            default:
+                cout << "Opcao invalida." << endl;
+        }
+    } while(opcao != 0);
+
+    return 0;
+}
