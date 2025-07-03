@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+void alterar(int valor, int &referencia) {
+    valor += 10;
+    referencia += 20;
+    cout << "Dentro da função: valor = " << valor << ", referencia = " << referencia << endl;
+}
+
+int main() {
+    int a = 5, b = 10;
+
+    cout << "Antes: a = " << a << ", b = " << b << endl;
+    alterar(a, b);
+    cout << "Depois: a = " << a << ", b = " << b << endl;
+
+    return 0;
+}
