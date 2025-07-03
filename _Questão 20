@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+void mostrarSituacao(string nome, float nota) {
+    cout << "Aluno: " << nome << endl;
+    if (nota >= 7) {
+        cout << "Aprovado" << endl;
+    } else {
+        cout << "Reprovado" << endl;
+    }
+}
+
+int main() {
+    string nome;
+    float nota;
+
+    cout << "Nome do aluno: ";
+    getline(cin, nome);
+
+    cout << "Nota: ";
+    cin >> nota;
+
+    mostrarSituacao(nome, nota);
+
+    return 0;
+}
