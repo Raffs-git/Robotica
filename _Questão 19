@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+float calcularMedia(float a, float b, float c) {
+    return (a + b + c) / 3;
+}
+
+int main() {
+    float n1, n2, n3, media;
+
+    cout << "Digite as 3 notas: ";
+    cin >> n1 >> n2 >> n3;
+
+    media = calcularMedia(n1, n2, n3);
+
+    cout << "A média é: " << media << endl;
+
+    return 0;
+}
