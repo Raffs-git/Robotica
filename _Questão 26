@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+void soma(int a, int b) {
+    cout << "Soma: " << a + b << endl;
+}
+
+void subtracao(int a, int b) {
+    cout << "Subtracao: " << a - b << endl;
+}
+
+void multiplicacao(int a, int b) {
+    cout << "Multiplicacao: " << a * b << endl;
+}
+
+void menu() {
+    int op, n1, n2;
+
+    cout << "Digite dois numeros: ";
+    cin >> n1 >> n2;
+
+    cout << "1 - Soma\n";
+    cout << "2 - Subtracao\n";
+    cout << "3 - Multiplicacao\n";
+    cout << "Escolha: ";
+    cin >> op;
+
+    if (op == 1) {
+        soma(n1, n2);
+    } else if (op == 2) {
+        subtracao(n1, n2);
+    } else if (op == 3) {
+        multiplicacao(n1, n2);
+    } else {
+        cout << "Opcao invalida\n";
+    }
+}
+
+int main() {
+    menu();
+    return 0;
+}
