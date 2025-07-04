@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
 
-// Função que calcula o quadrado de um número
+//Declaração de Função 
 int quadrado(int numero) {
     return numero * numero;
 }
 
 int main() {
-    int valor;
+    int numero1;
     cout << "Digite um número: ";
-    cin >> valor;
+    cin >> numero1;
 
-    cout << "O quadrado de " << valor << " é " << quadrado(valor) << endl;
+    cout << "O quadrado de " << numero1 << " é " << quadrado(numero1) << endl;
 
     return 0;
 }
